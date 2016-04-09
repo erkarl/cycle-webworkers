@@ -1,3 +1,3 @@
 <h1>
-CycleJS-Webpack-Starter
+CycleJS-WebWorkers
 </h1>

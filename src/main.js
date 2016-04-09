@@ -2,16 +2,18 @@ import Rx from 'rx';
 import Cycle from '@cycle/core';
 import {makeDOMDriver, div, input, p} from '@cycle/DOM';
 
-
 function main(drivers) {
+  console.log('main');
+  setInterval(function(){
+    for(var i = 0; i < 5000; i++){
+      console.log('looping');
+    }
+  }, 5000);
   return {
-    DOM: drivers.DOM.select('input').events('click')
-      .map(ev => ev.target.checked)
-      .startWith(false)
-      .map(toggled =>
+    DOM: Rx.Observable.of('')
+      .map(someVal =>
         div([
-          input({type: 'checkbox'}), 'Toggle me',
-          p(toggled ? 'TURNED ON' : 'TURNED OFF')
+          p('Cycle WebWorkers')
         ])
       )
   };

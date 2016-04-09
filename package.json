@@ -1,7 +1,7 @@
 {
-  "name": "cycle-webpack-starter",
+  "name": "cycle-webworkers",
   "version": "1.0.0",
-  "description": "CycleJS Starter Kit",
+  "description": "CycleJS WebWorkers",
   "main": "index.js",
   "scripts": {
     "dev": "./node_modules/webpack-dev-server/bin/webpack-dev-server.js --content-base build/ --inline",
@@ -10,7 +10,7 @@
   "keywords": [
     "cyclejs",
     "webpack",
-    "starting-kit"
+    "webworkers"
   ],
   "author": "Karl Ranna",
   "license": "MIT",

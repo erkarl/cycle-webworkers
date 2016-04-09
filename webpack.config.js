@@ -9,7 +9,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [new HtmlWebpackPlugin({
-    title: 'Hello Cycle',
+    title: 'Cycle WebWorkers',
     template: 'src/index.ejs',
     })
   ],
