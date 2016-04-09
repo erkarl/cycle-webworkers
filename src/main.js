@@ -1,14 +1,9 @@
 import Rx from 'rx';
 import Cycle from '@cycle/core';
 import {makeDOMDriver, div, input, p} from '@cycle/DOM';
+import loop from './loop.js';
 
 function main(drivers) {
-  console.log('main');
-  setInterval(function(){
-    for(var i = 0; i < 5000; i++){
-      console.log('looping');
-    }
-  }, 5000);
   return {
     DOM: Rx.Observable.of('')
       .map(someVal =>
