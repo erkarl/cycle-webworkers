@@ -6,7 +6,7 @@ import makeWebworkerDriver from './webworker.js';
 function main({DOM, webWorkers}) {
   const incomingWebworkers$ = webWorkers;
   webWorkers.subscribe(function(msg){
-    console.log('incoming webworker', msg);
+    console.log('incoming webworker', msg.data);
   });
   let outgoingWebworkers$ = Rx.Observable.interval(5000)
     .map(val => 'loop.js')
